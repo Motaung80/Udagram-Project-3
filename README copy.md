@@ -1,6 +1,6 @@
 # Udagram Image Filtering Application
 
-Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
+Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Motaung80/Udagram-Project-3/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Motaung80/Udagram-Project-3/tree/main)
 
 The project is split into two parts:
 1. Frontend - Angular web application built with Ionic Framework

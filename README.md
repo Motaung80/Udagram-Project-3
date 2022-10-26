@@ -1,2 +1,2 @@
 # Udagram-Project-3
-The project application, Udagram - an Image Filtering application, allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
+The project application, Udagram - an Image Filtering application, allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Motaung80/Udagram-Project-3/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Motaung80/Udagram-Project-3/tree/main)
