@@ -10,7 +10,7 @@ To help review your infrastructure, please include the following screenshots in 
 
 * Travis CI showing a successful build and deploy job
 
-
+https://github.com/Motaung80/Udagram-Project-3/blob/main/screenshots/Screenshot%20(11).png?raw=true
 
 ## Kubernetes
 * To verify Kubernetes pods are deployed properly
