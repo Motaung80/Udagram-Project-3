@@ -1,0 +1,47 @@
+/*Creating the cluster and its node groups*/
+eksctl create cluster --name myCluster --region=us-east-1 --nodes-min=2 --nodes-max=3
+
+docker image prune --all
+docker-compose -f docker-compose-build.yaml build --parallel
+docker-compose up
+docker-compose down
+
+source set_env.sh
+
+kubectl apply -f aws-secret.yaml
+kubectl apply -f env-secret.yaml
+kubectl apply -f env-configmap.yaml
+
+kubectl apply -f backend-feed-deployment.yaml
+kubectl apply -f backend-user-deployment.yaml
+kubectl apply -f frontend-deployment.yaml
+kubectl apply -f reverseproxy-deployment.yaml
+
+kubectl apply -f backend-feed-service.yaml
+kubectl apply -f backend-user-service.yaml
+kubectl apply -f frontend-service.yaml
+kubectl apply -f reverseproxy-service.yaml
+
+kubectl get nodes
+kubectl get deployments
+
+kubectl expose deployment frontend --type=LoadBalancer --name=publicfrontend2
+kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy2
+kubectl get services
+kubectl get pods 
+
+/*Frontend Directory*/
+docker build . -t motaung/udagram-frontend:v4
+docker push motaung/udagram-frontend:v4
+
+/*Deployment Directory*/
+kubectl set image deployment frontend frontend=motaung/udagram-frontend:v4
+
+kubectl describe services
+/*Horizontal Scaling*/
+eksctl create cluster --name LCluster --region=us-east-1 --nodes-min=2 --nodes-max=5
+kubectl describe hpa
+
+kubectl logs <your pod name>
+
+
