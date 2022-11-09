@@ -45,6 +45,7 @@ kubectl describe hpa
 ```bash
 kubectl logs {pod_name}
 ```
-![Screenshot (106)](https://user-images.githubusercontent.com/86393854/200855476-16efff48-8113-4417-8e78-ce8befbc8687.jpg)
+![Screenshot (108)](https://user-images.githubusercontent.com/86393854/200858663-938f21e9-5094-442c-9ed3-81df58f630a5.jpg)
+
 
 
