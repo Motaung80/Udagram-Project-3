@@ -34,10 +34,9 @@ kubectl describe services
 ```bash
 kubectl describe hpa
 ```
-![Picture22](https://user-images.githubusercontent.com/86393854/200703569-e7992b8c-6fa5-409f-99c2-f5886a730ba8.png)
-![Picture23](https://user-images.githubusercontent.com/86393854/200703591-ddd28d86-7d40-4bdb-805e-49575a6a5085.png)
-![Picture24](https://user-images.githubusercontent.com/86393854/200703606-d1e3570b-77f4-4440-a37e-9c6a1f626c6b.png)
+![Screenshot (104)](https://user-images.githubusercontent.com/86393854/200855263-86bea880-b9db-4f81-9ad9-aab93671a850.jpg)
 
+![Screenshot (105)](https://user-images.githubusercontent.com/86393854/200855389-b4e76a23-92be-48c4-8eef-c965d4d57448.jpg)
 
 
 
@@ -46,5 +45,6 @@ kubectl describe hpa
 ```bash
 kubectl logs {pod_name}
 ```
-![Picture25](https://user-images.githubusercontent.com/86393854/200703614-f9079e85-3275-4cfa-8375-c4b03381bad2.jpg)
+![Screenshot (106)](https://user-images.githubusercontent.com/86393854/200855476-16efff48-8113-4417-8e78-ce8befbc8687.jpg)
+
 
